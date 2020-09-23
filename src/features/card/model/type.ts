@@ -1,3 +1,12 @@
+export interface Equipments {
+    data: EquipmentCard[]
+    loading: boolean
+}
+
+export interface RequestEquipmentsResponse {
+    data: EquipmentCard[]
+}
+
 export enum EquipmentCardType {
     weapon,
     treasures,

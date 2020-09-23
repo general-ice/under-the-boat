@@ -30,9 +30,9 @@ export const GameCanvas = () => {
 
     return <Grid container direction="column" className={classes.root}>
         <GameStatusRow />
-        <Grid container className={classes.grid}>
+        <Grid container item className={classes.grid}>
             {Players}
-            <Grid className={classes.mainCard}>
+            <Grid container item className={classes.mainCard} alignItems="center">
                 <BoatScheme />
             </Grid>
         </Grid>
@@ -49,7 +49,7 @@ const useStyle = makeStyles(_ => ({
         gridTemplateRows: 'repeat(3, 1fr)',
         gridTemplateAreas: `
             "${GameArea.topLeft} . ${GameArea.topRight}"
-            ". ${GameArea.centerCard} ."
+            "${GameArea.centerCard} ${GameArea.centerCard} ${GameArea.centerCard}"
             "${GameArea.botLeft} . ${GameArea.botRight}"
         `
     },

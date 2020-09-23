@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "role": 4,
+      "name": "Skhipper",
+      "valueMultiplier": 1,
+      "strength": 3,
+      "basePosition": 6,
+      "description": "It is a good yang boy, which try to do himself on a boat. Can steal something cute things from all of colleagues"
+    },
+    {
+      "role": 3,
+      "name": "Cookmaster",
+      "valueMultiplier": 1,
+      "strength": 5,
+      "basePosition": 4,
+      "description": "Middle age man. Can cook very well from all of, that he can find on the boat. Single person, who can swim well"
+    },
+    {
+      "role": 1,
+      "name": "Boatsman",
+      "valueMultiplier": 0.7,
+      "strength": 8,
+      "basePosition": 3,
+      "description": "It is a huge man with enormous muscles. Can hit all of, which move. Second man on the boat"
+    },
+    {
+      "role": 2,
+      "name": "Lady",
+      "valueMultiplier": 3,
+      "strength": 4,
+      "basePosition": 1,
+      "description": "It is a single girl on the boat. It has some advantages. Such as big loyalty from all of peoples"
+    },
+    {
+      "role": 0,
+      "name": "Captain",
+      "valueMultiplier": 2,
+      "strength": 6,
+      "basePosition": 2,
+      "description": "Captain of the boat. Nothing can say else. Has a middle characters and captain hat"
+    }
+  ]
+}

@@ -1,9 +1,12 @@
 import { createStore, createEvent, createEffect } from "effector";
 import {NotificationType} from "./type";
+import {createGate} from "effector-react";
 
 export const TIMEOUT = 5000;
 
 export const $notes = createStore<NotificationType[]>([]);
+
+export const AppGate = createGate()
 
 $notes.watch(console.log);
 
