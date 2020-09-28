@@ -22,18 +22,20 @@ export const PlayerPlace = ({cards, gameArea, id, character}: Props) => {
 
     const classes = useStyle({gameArea})
 
-    return <Grid container direction="column" className={classes.root}>
+    return <Grid container className={classes.root}>
         <Grid container justify="center">
             <Typography variant="h5">{`Player-${id}`}</Typography>
         </Grid>
         <CharacterView role={character} />
-        <Grid container direction="column">
-            <Typography variant="body2">Opened cards</Typography>
-            {cards.opened.map(card => <OpenedEquipmentCard key={card.id} {...card} />)}
-        </Grid>
-        <Grid container direction="column">
-            <Typography variant="body2">Hidden cards</Typography>
-            {cards.opened.map(card => <HiddenEquipmentCard key={card.id} />)}
+        <Grid container item direction="column">
+            <Grid direction="column">
+                <Typography variant="body2">Opened cards</Typography>
+                {cards.opened.map(card => <OpenedEquipmentCard key={card.id} {...card} />)}
+            </Grid>
+            <Grid container direction="column">
+                <Typography variant="body2">Hidden cards</Typography>
+                {cards.hidden.map(card => <HiddenEquipmentCard key={card.id} />)}
+            </Grid>
         </Grid>
     </Grid>
 }

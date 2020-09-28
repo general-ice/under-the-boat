@@ -4,7 +4,7 @@ import {
     startGameProcess,
     startCardDistributionFx,
     $gameDistribution,
-    startDistribution, startDistributeEquipmentFx, givePlayerEquipment, recomputePlayerCards, distributeInitialEquipment
+    startDistribution, startDistributeEquipmentFx, givePlayerEquipment, recomputePlayerCards
 } from ".";
 import {GameArea, GamePlayer, GameStatus} from "./types";
 import {Character, CharacterInGame, CharacterRole} from "features/character/model/type";
@@ -75,7 +75,6 @@ computeBasicPlayerFx
             existPositions[pos] = true
 
             return {
-                positionOnBoat: PositionOnBoatPriority.findIndex(r => r === role),
                 id,
                 cards: {
                     opened: [],

@@ -30,8 +30,5 @@ export const OpenedEquipmentCard = (card: EquipmentCard) => {
 
 const useStyle = makeStyles(_ => ({
     root: {
-        border: '1px solid #cecece',
-        borderRadius: 4,
-        backgroundColor: '#fafafa'
     }
 }))

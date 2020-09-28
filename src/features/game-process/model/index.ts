@@ -34,10 +34,6 @@ export const startCardDistributionFx = createEffect<CardDistributionInputData, G
 
 export const startDistributeEquipmentFx = createEffect()
 
-export const giveOneEquipmentAll = createEvent
-
-export const distributeEquipmentFx = createEffect()
-
 export const givePlayerEquipment = createEvent<GivePlayerEquip>()
 
 export const recomputePlayerCards = createEvent<RecomputePlayerCard>()

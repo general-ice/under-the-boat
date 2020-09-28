@@ -36,7 +36,6 @@ export interface GamePlayer {
     character: CharacterRole,
     cards: PlayerCards
     gameArea: GameArea,
-    positionOnBoat: number
 }
 
 export interface CardDistributionInputData {
