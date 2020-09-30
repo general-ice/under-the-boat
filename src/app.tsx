@@ -1,10 +1,10 @@
 import React from 'react'
 import './init'
-import { GameCanvas } from 'features/game-process/game-canvas'
+import { GameCanvas } from 'features/game/game-canvas'
 import { useGate } from 'effector-react'
 import {AppGate} from "./features/app/model";
-import {registerPlayer, startGame} from "./features/game/model";
-import {$gameDistribution, $gameProcess, givePlayerEquipment} from "./features/game-process/model";
+import {registerPlayer, startGame} from "./features/game-old/model";
+import {$gameDistribution, $gameProcess, givePlayerEquipment} from "./features/game/model";
 import {$equipments} from "./features/card/model";
 
 const createSpecialPlayers = () => {

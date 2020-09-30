@@ -1,17 +1,18 @@
-import {createEvent, createStore, createEffect} from "effector";
-import {Game, RegistryPlayerInput, RegisterRejectReason, RegisteredPlayer} from "./type";
-import {CharacterRole} from "features/character/model/type";
+import {createEffect, createEvent, createStore} from "effector";
+import {
+    GameDistribution,
+    Game,
+    GameStatus,
+    GameStoreType
+} from "./types";
+import {RegisteredPlayer} from "features/game-old/model/type";
 
-const defaultGame: Game = {
-    id: '1',
-    players: [],
-    maxPlayer: 4
-}
+export const $game = createStore<GameStoreType>(null)
 
-export const $game = createStore<Game>(defaultGame)
+export const $gameWaitingRoom = createStore()
 
-export const registerPlayer = createEvent<CharacterRole>()
-
-export const startGame = createEvent()
-
-export const registerPlayerFx = createEffect<RegistryPlayerInput, RegisteredPlayer, RegisterRejectReason>()
+export const $gameDistribution = createStore<GameDistribution>({
+    characters: [],
+    navigationCards: [],
+    equipments: []
+})
